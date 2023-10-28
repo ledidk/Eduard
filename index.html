@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Day Youth Camp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" sizes="16x16 32x32 64x64 128x128">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="loading-page">
+        <div class="loading-animation"></div>
+    </div>
+    <div class="main-page">
+        <header>
+            <h1 class="event-title">One Day Youth Camp</h1>
+            <p>With Apostle Jose Eduard</p>
+        </header>
+
+            <div class="content">
+                <div class="bio">
+
+                    <div class="form-container">
+                        <h2>Formulaire des Visiteurs, Sondage de bienvenue</h2>
+                        <form id="submit-to-google-sheet">
+                            <label for="date">Date (*):</label>
+                            <input type="date" id="date" name="date" required>
+
+                            <label for="first-name">First Name (*):</label>
+                            <input type="text" id="first-name" name="first-name" required>
+
+                            <label for="last-name">Last Name (*):</label>
+                            <input type="text" id="last-name" name="last-name" required>
+
+                            <label for="phone">Phone Number (*):</label>
+                            <input type="tel" id="phone" name="phone" required>
+
+                            <label for="email">Email Address (*):</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="hear-from-us">How did you hear from us? (*)</label>
+                            <select id="hear-from-us" name="hear-from-us" required>
+                                <option value="website">Website</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <input type="text" id="other-source" name="other-source" placeholder="Please specify" style="display: none;">
+
+                            <label for="search-church">Are you in search of a church (*):</label>
+                            <select id="search-church" name="search-church" required>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+
+                            <label for="member-of-another-church">Are you already a member of another church (*):</label>
+                            <select id="member-of-another-church" name="member-of-another-church" required>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+
+                            <label for="experience">How was your experience at our church God is Good?</label>
+                            <textarea id="experience" name="experience"></textarea>
+
+                            <label for="home-visit">Are you in need of a home visit by the church member?</label>
+                            <select id="home-visit" name="home-visit">
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                            <input type="text" id="visit-time" name="visit-time" placeholder="Please specify a visit time" style="display: none;">
+
+                            <label for="consent">Do you consent to share the information with the church secretary? (*):</label>
+                            <select id="consent" name="consent" required>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+
+            </div>
+        </div>
+
+
+
+        <footer>
+            <div class="contact-info">
+                <!-- Add church contact information -->
+            </div>
+            <div class="social-links">
+                <img src="event-flyer.jpg" alt="Event Flyer">
+                <img src="church-logo.png" alt="Church Logo">  <br/>
+                <a href="mailto:ledidk17@gmail.com" target="_blank"><i class="far fa-envelope"></i> Email</a>
+                <a href="https://www.instagram.com/le.didk/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

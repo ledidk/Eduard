@@ -1,0 +1,201 @@
+/* Add your styles for the entire page here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #87CEEB;
+    color: #fff;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex-grow: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bio {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+/* Loading page styles */
+.loading-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB;
+}
+
+.loading-animation {
+    width: 100px;
+    height: 100px;
+    border: 4px solid #fff;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Main page styles */
+.main-page {
+    display: none; /* Initially hide the main page */
+}
+
+/* Form styles */
+.form-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="tel"],
+.form-container input[type="email"],
+.form-container select, 
+.form-container textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container select {
+    background-color: #f9f9f9;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="date"]:focus,
+.form-container input[type="tel"]:focus,
+.form-container input[type="email"]:focus,
+.form-container select:focus,
+.form-container textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form-container button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design styles */
+@media (max-width: 600px) {
+    /* Add styles for smaller screens here */
+}
+
+
+
+
+/* Footer Styling */
+footer {
+    color: #fff;
+    text-align: center;
+    /*background: linear-gradient(to left, #87CEEB, #4688F1, #0033A0);*/
+    background-color: #87CEEB;
+    background-size: 200% 100%;
+    animation: gradientShift 6s ease-in-out infinite alternate;
+    position: sticky;
+    bottom: 0;
+    z-index: 100;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.social-links a, img {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 3%;
+}
+
+.social-links a i {
+    margin-right: 5px;
+}
+
+a {
+    color: blue; 
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-size:20px ;
+}
+
+a:visited {
+    color: blue; 
+}
+
+a:hover {
+    color: rgb(72, 72, 108); 
+}
+/* Media Queries for Font Size Adjustments */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header, .content, .bio {
+        font-size: 16px;
+    }
+
+    #page-title::before {
+        font-size: 24px;
+    }
+
+    .changing-text span {
+        font-size: 18px;
+    }
+
+    .social-links a {
+        font-size: 16px;
+    }
+}

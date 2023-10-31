@@ -135,9 +135,6 @@ footer {
     background-color: #87CEEB;
     background-size: 200% 100%;
     animation: gradientShift 6s ease-in-out infinite alternate;
-    position: sticky;
-    bottom: 0;
-    z-index: 100;
 }
 
 @keyframes gradientShift {
